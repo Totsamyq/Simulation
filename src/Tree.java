@@ -1,6 +1,6 @@
 public class Tree extends Entity {
 
     public Tree (int x, int y){
-        super( x, y, "\uD83C\uDF33");
+        super(new Position(x,y), "\uD83C\uDF33");
     }
 }

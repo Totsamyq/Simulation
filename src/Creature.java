@@ -20,11 +20,11 @@ public abstract class Creature extends Entity{
 
 
     public Creature(int x, int y, String appearance, int hp, int speed){
-        super(x, y, appearance);
+        super(new Position(x,y), appearance);
         this.hp = hp;
         this.speed = speed;
     }
 
-    public abstract void makeMove();
+    public abstract void makeMove(Map map,PathFinder pathFinder);
 
 }
